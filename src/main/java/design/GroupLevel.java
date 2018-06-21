@@ -1,7 +1,7 @@
 package design;
 
 /**
- * Design an api that will return a portfolio grouping for the given investments
+ * Design an api that will return a portfolio grouping
  *
  */
 public class GroupLevel {
