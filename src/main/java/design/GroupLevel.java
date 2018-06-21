@@ -1,8 +1,14 @@
 package design;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Design an api that will return a portfolio grouping for the given investments
+ * Portfolio Grouping Level
  *
  */
 public class GroupLevel {
+
+    String portfolioGroupCode;
+    List<Investment> investments = new ArrayList<>();
 }
