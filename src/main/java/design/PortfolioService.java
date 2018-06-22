@@ -17,6 +17,7 @@ public class PortfolioService {
         GroupLevel parent = root;
         int count = 0;
         for (Investment investment : investments) {
+            count = 0;
             for (String groupCode : groupOnCodes) {
                 count++;
                 String portfolioGroupCode = getPortfolioGroupCodeByGroupOnCode(groupCode, investment);
