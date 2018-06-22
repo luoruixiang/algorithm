@@ -2,12 +2,37 @@ package design;
 
 public class Investment {
 
+    private String investmentId;
     private String planId;
     private String planCode;
-    private String ClientId;
+    private String clientId;
     private PlanType planType;
-    private InvestmentType InvestmentType;
-    private InvestmentRisk InvestmentRisk;
+    private InvestmentType investmentType;
+    private InvestmentRisk investmentRisk;
+
+    public Investment(String investmentId,
+                      String planId,
+                      String planCode,
+                      String clientId,
+                      PlanType planType,
+                      InvestmentType investmentType,
+                      InvestmentRisk investmentRisk) {
+        this.investmentId = investmentId;
+        this.planId = planId;
+        this.planCode = planCode;
+        this.clientId = clientId;
+        this.planType = planType;
+        this.investmentType = investmentType;
+        this.investmentRisk = investmentRisk;
+    }
+
+    public String getInvestmentId() {
+        return investmentId;
+    }
+
+    public void setInvestmentId(String investmentId) {
+        this.investmentId = investmentId;
+    }
 
     public String getPlanId() {
         return planId;
@@ -26,11 +51,11 @@ public class Investment {
     }
 
     public String getClientId() {
-        return ClientId;
+        return clientId;
     }
 
     public void setClientId(String clientId) {
-        ClientId = clientId;
+        this.clientId = clientId;
     }
 
     public PlanType getPlanType() {
@@ -42,18 +67,18 @@ public class Investment {
     }
 
     public InvestmentType getInvestmentType() {
-        return InvestmentType;
+        return investmentType;
     }
 
     public void setInvestmentType(InvestmentType investmentType) {
-        InvestmentType = investmentType;
+        this.investmentType = investmentType;
     }
 
     public InvestmentRisk getInvestmentRisk() {
-        return InvestmentRisk;
+        return investmentRisk;
     }
 
     public void setInvestmentRisk(InvestmentRisk investmentRisk) {
-        InvestmentRisk = investmentRisk;
+        this.investmentRisk = investmentRisk;
     }
 }
